@@ -71,7 +71,7 @@ HttpClient.prototype.onloadHandler = function(e) {
 	if (e.source.responseText) {
 		this.fireEvent('load', {data:e.source.responseText});
 	} else {
-		this.fireEvent('load', {data:{}});
+		this.fireEvent('load', {data:null});
 	}
 	this.http = null;
 }
