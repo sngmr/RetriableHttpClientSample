@@ -31,7 +31,7 @@ button.addEventListener('click', function() {
 	});
 	
 	// 通信開始
-	http.open('GET', 'http://pachinkosns.herokuapp.com/api/v1/tweets');
+	http.open('GET', 'http://hoge.com/hoge.json');
 	http.send();
 });
 
