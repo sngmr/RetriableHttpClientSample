@@ -1,7 +1,8 @@
 var Eventuality = function() {
-	this.events = {};
+	this.events;
 }
 Eventuality.prototype.addEventListener = function(name, callback) {
+	this.events = this.events || {};
 	if (typeof this.events[name] === 'undefined') {
 		this.events[name] = [callback];
 	} else {
